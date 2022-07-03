@@ -26,7 +26,7 @@ export default function Login(props) {
                         className="form-control"
                         id="email"
                         onChange={(event) => {
-                            setState({ ...loginState, username: event.target.value });
+                            setLoginState({ ...loginState, username: event.target.value });
                         }}
                         aria-describedby="emailHelp"
                     />
@@ -43,7 +43,7 @@ export default function Login(props) {
                         className="form-control"
                         id="password"
                         onChange={(event) => {
-                            setState({ ...loginState, password: event.target.value });
+                            setLoginState({ ...loginState, password: event.target.value });
                         }}
                     />
                 </div>

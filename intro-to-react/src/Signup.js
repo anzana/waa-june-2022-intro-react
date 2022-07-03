@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function Signup(props) {
     const initialState = {firstName:"",middleName:"",lastName:"", email:"",password:""}
@@ -22,7 +22,7 @@ export default function Signup(props) {
                 className="form-control"
                 id="text"
                 onChange={(event) => {
-                  setState({ ...signupState, firstName: event.target.value });
+                  setSignupState({ ...signupState, firstName: event.target.value });
                 }}
                 aria-describedby="emailHelp"
               />
@@ -39,7 +39,7 @@ export default function Signup(props) {
                 className="form-control"
                 id="middleName"
                 onChange={(event) => {
-                  setState({ ...signupState, middleName: event.target.value });
+                  setSignupState({ ...signupState, middleName: event.target.value });
                 }}
               />
             </div>
@@ -52,7 +52,7 @@ export default function Signup(props) {
                 className="form-control"
                 id="lastName"
                 onChange={(event) => {
-                  setState({ ...signupState, lastName: event.target.value });
+                  setSignupState({ ...signupState, lastName: event.target.value });
                 }}
               />
             </div>
@@ -65,7 +65,7 @@ export default function Signup(props) {
                 className="form-control"
                 id="email"
                 onChange={(event) => {
-                  setState({ ...signupState, email: event.target.value });
+                  setSignupState({ ...signupState, email: event.target.value });
                 }}
               />
             </div>
@@ -78,7 +78,7 @@ export default function Signup(props) {
                 className="form-control"
                 id="password"
                 onChange={(event) => {
-                  setState({ ...signupState, password: event.target.value });
+                  setSignupState({ ...signupState, password: event.target.value });
                 }}
               />
             </div>
